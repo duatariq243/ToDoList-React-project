@@ -6,7 +6,7 @@ import "../styles/task.css";
 
 function TaskList() {
   const [tasks, setTasks] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); //loading is current value , setloading is the update value
   const [taskToEdit, setTaskToEdit] = useState(null);
 
   const loadTasks = async () => {
@@ -22,7 +22,7 @@ function TaskList() {
 };
   
 
-  useEffect(() => {
+  useEffect(() => {  //useEffect (Side Effects) ⏱️Used for:Fetching data Running code on page load Watching changes
     loadTasks();
   }, []);
 
@@ -53,7 +53,7 @@ function TaskList() {
       ) : (
         tasks.map((task) => (
           <TaskItem
-            task={task}
+            task={task}//prop parent
          onDelete={deleteOneTask}
          onEdit={setTaskToEdit}
           />
