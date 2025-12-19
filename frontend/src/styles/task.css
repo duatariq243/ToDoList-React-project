@@ -1,0 +1,137 @@
+/* Global page */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell;
+  background-color: #f4f5f7; /* Trello-like */
+}
+
+/* Main container */
+.task-container {
+  max-width: 420px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.task-title {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #172b4d;
+}
+
+/* Form */
+.task-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #dfe1e6;
+  font-size: 14px;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: #0052cc;
+}
+
+/* Add button */
+.add-btn {
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #0065ff;
+}
+
+/* Task item */
+.task-item {
+  background-color: #ebecf0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: #de350b;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  color: #bf2600;
+}
+
+/* Loading / empty text */
+.info-text {
+  text-align: center;
+  color: #5e6c84;
+}
+.app-container {
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.task-card {
+  background: #ffffff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-card span {
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn {
+  background-color: #0079bf;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #eb5a46;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #f2d600;
+  margin-right: 5px;
+}
+
+input {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
